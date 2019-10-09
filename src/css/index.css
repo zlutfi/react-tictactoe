@@ -3,6 +3,7 @@
 html {
   background-color: #241788;
   background-image: url('../img/bg.svg');
+  background-attachment: fixed;
   height: 100%;
   /* background-image: url('../img/bg.jpg');
   background-size: cover;
@@ -38,12 +39,12 @@ ul {
   font-size: 64px;
   font-weight: bold;
   line-height: 34px;
-  height: 100px;
+  height: 90px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 100px;
+  width: 90px;
 }
 
 .square:focus {
@@ -60,6 +61,7 @@ ul {
   align-items: center;
   justify-content: center;
   height: 100%;
+  width: 100%;
 }
 
 .game-board {
