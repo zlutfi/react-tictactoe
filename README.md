@@ -4,10 +4,17 @@
 
 A simple obligatory Tic-Tac-Toe game created with ReactJs and create-react-app. This is a back to basics type of "practice" app.
 
+##Technology Used
+
+- **React** - Interactivity
+- **HTML/CSS** - Markup and Styling
+- **Netlify** - Hosting
+
 [View Game](https://rttt.netlify.com)
 
-Technology Used
+### Upcoming features
 
-- React - Interactivity
-- HTML/CSS - Markup and Styling
-- Netlify - Hosting
+- Animations
+- Sounds
+- Highlighting the winning line
+- more...
