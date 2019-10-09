@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './css/index.css';
 
 // Render the squares
 function Square(props) {
@@ -34,8 +34,12 @@ function Square(props) {
               squares: Array(9).fill(null),
               xIsNext: true,
           };
+          this.baseState = this.state
       }
-
+  //  Reset this form to it's default state to create a new game
+      resetForm = () => {
+          this.setState(this.baseState)
+      }
       handleClick(i){
           const squares = this.state.squares.slice();
           if (calculateWinner(squares) || squares[i]) {
@@ -82,6 +86,9 @@ function Square(props) {
             {this.renderSquare(8)}
           </div>
           <div className="status">{status}</div>
+          <div className="reset">
+            <button onClick={this.resetForm}>New Game</button>
+          </div>
         </div>
       );
     }
@@ -92,7 +99,7 @@ function Square(props) {
       return (
         <div className="game">
           <div className="game-board">
-            <h1 className="title">React Tic Tac Toe</h1>
+            <h1 className="title">Tic-Tac-Toe</h1>
             <Board />
           </div>
           <div className="game-info">
