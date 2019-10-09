@@ -36,8 +36,8 @@ function Square(props) {
           };
           this.baseState = this.state
       }
-  //  Reset this form to it's default state to create a new game
-      resetForm = () => {
+  //  Reset this game to it's default state
+      resetGame = () => {
           this.setState(this.baseState)
       }
       handleClick(i){
@@ -87,7 +87,7 @@ function Square(props) {
           </div>
           <div className="status">{status}</div>
           <div className="reset">
-            <button onClick={this.resetForm}>New Game</button>
+            <button onClick={this.resetGame}>New Game</button>
           </div>
         </div>
       );
