@@ -1,15 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 html {
-  background: linear-gradient(to bottom, #d5dee7 0%, #e8ebf2 50%, #e2e7ed 100%),
-    linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.02) 50%,
-      rgba(255, 255, 255, 0.02) 61%,
-      rgba(0, 0, 0, 0.02) 73%
-    ),
-    linear-gradient(33deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
-  background-blend-mode: normal, color-burn;
+  background-color: #241788;
+  background-image: url('../img/bg.svg');
   height: 100%;
   /* background-image: url('../img/bg.jpg');
   background-size: cover;
@@ -34,7 +27,8 @@ ul {
 }
 
 .status {
-  margin-top: 10px;
+  margin-top: 30px;
+  color: #fff;
 }
 
 .square {
@@ -65,6 +59,7 @@ ul {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .game-board {
@@ -77,6 +72,8 @@ ul {
 }
 .title {
   text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 button {
@@ -84,7 +81,13 @@ button {
 }
 .reset button {
   padding: 1rem;
-  margin: 2rem 0;
+  margin: 30px 0;
   border-radius: 2rem;
   background-color: #fff;
+  cursor: pointer;
+}
+.reset button:hover {
+  background-color: #333;
+  color: #fff;
+  transition: 0.5s ease;
 }
