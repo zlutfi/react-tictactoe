@@ -7,7 +7,7 @@ A simple obligatory Tic-Tac-Toe game created with ReactJs and create-react-app. 
 
 ## Technology Used
 
-- **React** - Interactivity
+- **ReactJS** - Interactivity
 - **HTML/CSS** - Markup and Styling
 - **Netlify** - Hosting
 
