@@ -66,7 +66,6 @@ function Square(props) {
       }
       return (
         <div>
-          <div className="status">{status}</div>
           <div className="board-row">
             {this.renderSquare(0)}
             {this.renderSquare(1)}
@@ -82,6 +81,7 @@ function Square(props) {
             {this.renderSquare(7)}
             {this.renderSquare(8)}
           </div>
+          <div className="status">{status}</div>
         </div>
       );
     }
@@ -92,6 +92,7 @@ function Square(props) {
       return (
         <div className="game">
           <div className="game-board">
+            <h1 className="title">React Tic Tac Toe</h1>
             <Board />
           </div>
           <div className="game-info">
