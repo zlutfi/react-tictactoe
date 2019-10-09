@@ -15,5 +15,5 @@ A simple obligatory Tic-Tac-Toe game created with ReactJs and create-react-app. 
 
 - Animations
 - Sounds
-- Highlighting the winning line
+- Highlight the winning line
 - more...
