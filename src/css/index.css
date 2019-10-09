@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
 html {
   background: linear-gradient(to bottom, #d5dee7 0%, #e8ebf2 50%, #e2e7ed 100%),
     linear-gradient(
@@ -9,10 +11,15 @@ html {
     linear-gradient(33deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
   background-blend-mode: normal, color-burn;
   height: 100%;
+  /* background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
 }
 body {
-  font: 14px 'Century Gothic', Futura, sans-serif;
   margin: 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
 }
 
 ol,
@@ -60,9 +67,24 @@ ul {
   justify-content: center;
 }
 
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .game-info {
   margin-left: 20px;
 }
 .title {
   text-align: center;
+}
+
+button {
+  font-family: 'Press Start 2P', cursive;
+}
+.reset button {
+  padding: 1rem;
+  margin: 2rem 0;
+  border-radius: 2rem;
+  background-color: #fff;
 }
